@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  background-color:#d8d1d1c7; /* Green */
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  
+}
+
+.button:hover {
+  background-color: #008CBA;
+  color: white;
+  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #d8d1d1c7;
+}
+</style>
+</head>
+<body>
+<center><h3 align='right'><form method="get" action="index.html">
+  <button type="submit" class="button"><b>Logout</b></button>
+</form></h3>
+<h1>UCL Computer Shop</h1>
+
+<h2>Product Catagory</h2>
+<br>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <a href="case.php"> <img src="images\case.png" height="150" width="150"></a>
+      <p>Casing</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="processor.php"> <img src="images\processor.png" height="150" width="180"></a>
+        <p>Processor</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <a href="mobo.php"> <img src="images\mobo.png" height="150" width="150"></a>
+        <p>Motherboard</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <a href="vga.php"> <img src="images\vga.png" height="150" width="170"></a>
+        <p>Graphics Card</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+       <a href="ram.php"> <img src="images\ram.png" height="150" width="180"></a>
+        <p>Desktop RAM</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+          <a href="dd.php"> <img src="images\drive.png" height="150" width="180"></a>
+          <p>SSD / HDD</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+          <a href="psu.php"> <img src="images\psu.png" height="150" width="180"></a>
+          <p>Power Supply</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+          <a href="monitor.php"> <img src="images\monitor.png" height="150" width="190"></a>
+          <p>Monitors</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+       <a href="kbm.php"> <img src="images\kbm.png" height="150" width="150"></a>
+        <p>Keyboard / Mouse</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+          <a href="sound.php"> <img src="images\heads.png" height="150" width="180"></a>
+          <p>Sound System</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+          <a href="accessories.php"> <img src="images\accessories.png" height="150" width="150"></a>
+          <p>Accessories</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+          <a href="laptop.php"> <img src="images\laptop.png" height="150" width="190"></a>
+          <p>Laptop</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

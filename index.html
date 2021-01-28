@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+<title>Login : UCL Computers</title>
+
+<div class="login-container">
+    <section class="login" id="login">
+      <header>
+        <h3>UCL Computer Shop</h3>
+        <h4>Inventory Management System</h4>
+      </header>
+      <form class="login-form" action="login.php" method="POST">
+        <input type="text" class="login-input" name='uname' placeholder="Username" required autofocus/>
+        <input type="password" class="login-input" name='pw' placeholder="Password" required/>
+
+        <label for="user" >Login As : </label>
+
+          <select name="usertype" class="login-input">
+           <option value="admin">Admin</option>
+           <option value="employee">Employee</option>
+          </select>
+
+        <div class="submit-container">
+          <button type="submit" class="login-button">Login</button>
+        </div>
+      </form>
+    </section>
+   
+  </div>
